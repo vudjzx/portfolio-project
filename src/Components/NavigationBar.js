@@ -1,14 +1,15 @@
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
 const NavigationBar = () => {
+
     return (
         <div>
             <Navbar 
             bg="light"
             variant="light"
-            sticky="top"
+            fixed="top"
             expand="sm"
-            className="justify-content-between"
+            className="navigation"
             >
                 <Navbar.Brand href="#home">Víctor Durán</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"  />

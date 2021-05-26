@@ -1,0 +1,26 @@
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home{
+  display: grid;
+  place-items: center;
+  /* padding-top: 30px; */
+  background-color: crimson;
+  height: 100vh;
+}
+#about{
+  background-color: aqua;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+#projects{
+  display: grid;
+  place-items: center;
+  background-color: salmon;
+  height: 100vh;
+}
