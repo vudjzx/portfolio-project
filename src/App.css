@@ -1,26 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 *{
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+bg-nav-color{
+  background-color: white;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Poppins', sans-serif !important; 
+}
 
+.navigation{
+  font-size: 2.3rem;
+}
+.name-logo{
+  font-size: 3rem !important;
+}
 #home{
   display: grid;
   place-items: center;
-  /* padding-top: 30px; */
-  background-color: crimson;
   height: 100vh;
 }
 #about{
-  background-color: aqua;
   height: 100vh;
   display: grid;
   place-items: center;
 }
+
 #projects{
-  display: grid;
-  place-items: center;
-  background-color: salmon;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(5,1fr);
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+}
+#projects img{
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px -5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 15px -5px rgba(0,0,0,0);
+  border-radius: 1.5rem;
+  
+}
+#project-section-title{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 70px;
+}
+.project-description{
+  text-align: center;
+}
+.project-description h3{
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+.project-description p{
+  font-size: 1.8rem;
+}
+.technologies{
+  font-size: 1.8rem;
+}
+@media (max-width:770px) {
+  #projects{
+      grid-template-columns: 1fr;
+  }
+  #project-section-title{
+      grid-column-start: 1;
+      grid-column-end: 2;
+  }
+  #projects img{
+    width: 100%;
+  }
 }

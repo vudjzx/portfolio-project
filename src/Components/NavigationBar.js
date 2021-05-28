@@ -1,17 +1,17 @@
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
+import '../App.css';
 const NavigationBar = () => {
 
     return (
         <div>
             <Navbar 
-            bg="light"
-            variant="light"
+            bg="nav-color"
             fixed="top"
             expand="sm"
             className="navigation"
             >
-                <Navbar.Brand href="#home">Víctor Durán</Navbar.Brand>
+                <Navbar.Brand href="#home" className="name-logo" >Víctor Durán</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"  />
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="ml-auto">
