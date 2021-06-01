@@ -9,35 +9,36 @@ const Projects = () => {
         <Container>
             <div id="projects">
                 <h1 id="project-section-title">Projects</h1>
-                
-                <img src={p1} alt="" />
+                <a target="blank" href="https://pensive-wright-50ab95.netlify.app">
+                    <img src={p1} alt="" />
+                </a>
                 <div className="project-description">
                     <h3>React movie app</h3>
-                    <p>Movie information app developed using themoviedb.org API, shows information such as movie poster, description, release date. Sectioned by movies and series.
-                    </p>
-                    <ul className="technologies">
-                        <li>HTML, CSS, Javascript</li>
-                        <li>React native</li>
-                        <li>Material ui components</li>
-                    </ul>
+                    <p>I love movies, but I often struggle with picking one. I built a friendly interface to view movies and series overview and information, using themoviedb.org API and material ui components.</p>
                 </div>
 
-                <img src={p2} alt="" />
+                <a target="blank" href="https://boring-fermi-e4a4be.netlify.app">
+                    <img src={p2} alt="" />
+                </a>
                 <div className="project-description">
                     <h3>Image finder</h3>
-                    <p>Project info here</p>
+                    <p>This was the first project I actually practiced interacting with APIs. It's a simple image finder using the pixabay API. Made it only with HTML, CSS and Javascript</p>
                 </div>
 
-                <img src={p3} alt="" />
+                <a target="blank" href="https://laughing-goodall-9c767e.netlify.app">
+                    <img src={p3} alt="" />
+                </a>
                 <div className="project-description">
                     <h3>Weather app</h3>
-                    <p>Project info here</p>
+                    <p>I wanted to get more into getting information from APIs and so I built a simple weather app with react, using materialize CSS.</p>
                 </div>
 
-                <img src={p4} alt="" />
+                <a target="blank" href="https://epic-morse-e7404c.netlify.app">
+                    <img src={p4} alt="" />
+                </a>
                 <div className="project-description">
                     <h3>Scheduler</h3>
-                    <p>Project info here</p>
+                    <p>The first project I made entirely with React, HTML and CSS, to get a gasp of how to create components, how data flows thru them and the use of hooks.</p>
                 </div>
             </div>
         </Container>
