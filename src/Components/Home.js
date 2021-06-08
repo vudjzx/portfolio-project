@@ -1,24 +1,23 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import pp from './images/perfil.jpg'
+import { Button, Col, Row } from 'react-bootstrap'
 const Home = () => {
     return (
-        <Container>
-            <div id="home">
-                <div className="imgBx">
-                    <img src={pp} alt="" />
-                </div>
-                <div className="content">
-                    <h1>Hi, my name is Víctor.</h1>
-                    <p>I'm 21 years old, currently undergoing software engineering at the Universad Autónoma de Yucatán.
-                        <br />
-                        I love everything related to web development specially the <b>backend</b> part of it.
-                        <br />
-                        My goal is to continue learning and become a fullstack developer.
-                    </p>
-                </div>
-            </div>
-        </Container>
+        <div id="home" className="d-flex flex-column justify-content-center align-items-center">
+        
+                <Row>
+                    <Col sm="auto" xs="auto" md="auto"><h1>Hi, I'm Víctor</h1></Col>
+                </Row>
+                <Row>
+                    <Col sm="auto" xs="auto"><p>Web Developer</p></Col>
+                </Row>
+                <Row>
+                    <Col sm="auto" xs="auto"><Button size="lg" href="#projects" variant="outline-dark">View work</Button></Col>
+                    <Col sm="auto" xs="auto"><Button size="lg" href="#contact" variant="outline-dark">Contact me</Button></Col>
+                    <Col sm="auto" xs="auto"><Button size="lg" href="#contact" variant="outline-dark">Resume</Button></Col>
+                </Row>
+                
+            
+        </div>
 
     )
 }
