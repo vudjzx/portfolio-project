@@ -33,6 +33,20 @@ body{
 #home p,a{
   font-size: 2.5rem;
 }
+#projects h1{
+  font-size: 4.25em;
+  margin-bottom: 1em;
+}
+#contact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#contact h1{
+  font-size: 4.25em;
+}
+#contact h2{
+  font-size: 2.5em;
+}
 .card img{
   height: 300px;
   object-fit: cover;
@@ -87,12 +101,6 @@ body{
     flex-direction: column !important;
   }
 }
-/* @media (max-width:500px){
-  .contact-links{
-    display: flex;
-    flex-direction: column !important;
-  }
-} */
 .row,.col{
   max-width: 100%;
 }
@@ -100,7 +108,6 @@ body{
   display: grid;
   min-width: 30%;
   max-width: 70%;
-
 }
 .about-me img{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -124,9 +131,6 @@ body{
     max-width: 95%;
 
   }
-  .about-me h1{
-    font-size: 3em;
-  }
   .about-me p{
     font-size: 2em;
   }
@@ -138,9 +142,6 @@ body{
   }
 }
 @media (max-width:405px){
-  .about-me h1{
-    font-size: 2.5em;
-  }
   .about-me p{
     font-size: 1.7em;
   }

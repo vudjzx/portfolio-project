@@ -46,7 +46,10 @@ const Projects = () => {
         }
     ]
     return (
-        <div id="projects" className="d-flex justify-content-center align-items-center">
+        <div id="projects" className="d-flex flex-column justify-content-center align-items-center">
+            <Row>
+                <h1>Projects</h1>
+            </Row>
             <Row xxl="4" xl="4" lg="2">
                 {projects.map((project,index)=>
                         <Col key={index}>

@@ -4,10 +4,11 @@ const About = () => {
     return (
         <div id="about" className="d-flex justify-content-center align-items-center">
             <div className="about-me">
+                <h1 className="text-center">About me</h1>
                 <div className="pp-container d-flex justify-content-center">
                     <img src={perfil} alt=""/>
                 </div>
-                <h1 className="text-center">About me</h1>
+                
                 <p className="text-center">My name is Victor, I'm currently a college student undergoing software engineering at the Autonomous University of Yucatán.
 I enjoy learning about web developement in my free time as I'm trying to become a fullstack developer.
 I'm looking for an opportunity to grow both individually and professionally so feel free to reach out via any links down below.</p>
