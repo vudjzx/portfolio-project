@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Card } from 'react-bootstrap'
 import ProjectModal from './ProjectModal';
-const ProjectCard = ({title,tags,img,github,liveSite}) => {
+const ProjectCard = ({title,tags,img,github,liveSite,description}) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -18,7 +18,7 @@ const ProjectCard = ({title,tags,img,github,liveSite}) => {
             <Card.Title><h2>{title}</h2></Card.Title>
             <Card.Text>
                 <div className="tags">
-                    {tags.map(tag=><span className="tag">{tag}</span>)}
+                    {tags.map((tag,index)=><span key={index} className="tag">{tag}</span>)}
                 </div>
             </Card.Text>
           </Card.Body>
@@ -29,6 +29,7 @@ const ProjectCard = ({title,tags,img,github,liveSite}) => {
         title={title}
         github={github}
         liveSite={liveSite}
+        description={description}
         />
       </>
     )

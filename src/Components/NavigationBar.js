@@ -12,7 +12,7 @@ const NavigationBar = () => {
             expand="sm"
             className="navigation"
             >
-                <Navbar.Brand href="#home" className="name-logo" >Víctor Durán</Navbar.Brand>
+                <Navbar.Brand href="#home" className="name-logo" >Victor Duran</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"  />
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="ml-auto">

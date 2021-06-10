@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Modal } from 'react-bootstrap'
 
-const ProjectModal = ({show, onHide,title,github,liveSite}) => {
+const ProjectModal = ({show, onHide,title,github,liveSite,description}) => {
     return (
         <>  
             <Modal
@@ -12,7 +12,7 @@ const ProjectModal = ({show, onHide,title,github,liveSite}) => {
             <Modal.Header closeButton>
                 <Modal.Title>{title}</Modal.Title>
             </Modal.Header>
-            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+            <Modal.Body><p>{description}</p> </Modal.Body>
             <Modal.Footer>
                 <Button
                 size="lg"

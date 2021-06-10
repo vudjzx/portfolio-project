@@ -5,7 +5,7 @@ const Home = () => {
         <div id="home" className="d-flex flex-column justify-content-center align-items-center">
         
                 <Row>
-                    <Col sm="auto" xs="auto" md="auto"><h1>Hi, I'm Víctor</h1></Col>
+                    <Col sm="auto" xs="auto" md="auto"><h1>Hi, I'm Victor</h1></Col>
                 </Row>
                 <Row>
                     <Col sm="auto" xs="auto"><p>Web Developer</p></Col>

@@ -9,19 +9,23 @@ html{
   font-size: 62.5%;
 }
 body{
-  font-family: 'Poppins', sans-serif !important; 
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .navigation{
   font-size: 2.3rem;
   text-transform: uppercase;
 }
-
+.navbar{
+  max-width: 100% !important;
+}
 .name-logo{
   font-size: 3rem !important;
 }
 #home, #contact, #projects,#about{
   min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 #home h1{
   font-size: 5rem;
@@ -42,6 +46,8 @@ body{
   transition: 1s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
   border-radius: 1rem !important;
+  min-width: 100% !important;
+  margin-bottom: 1em;
 }
 .card:hover img{
   opacity:1.0;
@@ -72,12 +78,73 @@ body{
   display: flex;
   margin: 10px;
 }
+.contact-links{
+  display: flex;
+}
+@media (max-width:575px) {
+  .contact-links{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
 /* @media (max-width:500px){
   .contact-links{
     display: flex;
     flex-direction: column !important;
   }
 } */
-.skills>span{
+.row,.col{
+  max-width: 100%;
+}
+.about-me{
+  display: grid;
+  min-width: 30%;
+  max-width: 70%;
+
+}
+.about-me img{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.about-me h1{
+  font-size: 4.25em;
+}
+.about-me p{
+  font-size: 2.3em;
+}
+.about-me span{
   margin: 0;
+  margin-right: 5px;
+  font-size: 2.3em;
+}
+@media (max-width:555px){
+  .about-me{
+    max-width: 95%;
+
+  }
+  .about-me h1{
+    font-size: 3em;
+  }
+  .about-me p{
+    font-size: 2em;
+  }
+  .about-me span{
+    font-size: 2em;
+  }
+  .skills-title{
+    padding-top: 2em;
+  }
+}
+@media (max-width:405px){
+  .about-me h1{
+    font-size: 2.5em;
+  }
+  .about-me p{
+    font-size: 1.7em;
+  }
+  .about-me span{
+    font-size: 1.5em;
+  }
 }
