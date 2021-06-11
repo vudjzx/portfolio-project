@@ -13,7 +13,7 @@ const Home = () => {
                 <Row>
                     <Col sm="auto" xs="auto"><Button size="lg" href="#projects" variant="outline-dark">View work</Button></Col>
                     <Col sm="auto" xs="auto"><Button size="lg" href="#contact" variant="outline-dark">Contact me</Button></Col>
-                    <Col sm="auto" xs="auto"><Button size="lg" href="#contact" variant="outline-dark">Resume</Button></Col>
+                    <Col sm="auto" xs="auto"><Button size="lg" target="blank" href="https://drive.google.com/file/d/1yAKkpN4SUUGrO8T8aGXMtyvYFnstW5V0/view?usp=sharing" variant="outline-dark">Resume</Button></Col>
                 </Row>
                 
             
